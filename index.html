@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky's Concrete Dallas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #F0F0F5;
-            color: #2B2D42;
         }
         .primary {
             color: #2B2D42;
@@ -22,42 +19,37 @@
             background-color: #F0F0F5;
         }
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1400x700/?concrete');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/84c25d9bhero/1400/700');
             background-size: cover;
             background-position: center;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            color: white;
         }
         .sticky-nav {
             position: sticky;
             top: 0;
             background-color: #2B2D42;
             color: white;
-            padding: 10px;
+            padding: 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
         .nav-link {
-            margin-right: 20px;
-        }
-        .nav-link a {
             color: white;
             text-decoration: none;
+            margin-right: 2rem;
+        }
+        .nav-link:hover {
+            color: #EF233C;
         }
         .stats {
             display: flex;
             justify-content: space-around;
-            margin-top: 20px;
+            margin-top: 2rem;
         }
         .stat {
             display: flex;
@@ -70,144 +62,145 @@
             justify-content: center;
         }
         .service {
-            margin: 20px;
-            padding: 20px;
+            margin: 2rem;
+            padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 10px;
-            width: calc(33.33% - 20px);
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            width: 200px;
+            text-align: center;
         }
         .why-us {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            padding: 2rem;
         }
         .reviews {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .review {
-            margin-bottom: 20px;
-            padding: 20px;
+            margin: 2rem;
+            padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-            width: 80%;
+            width: 300px;
         }
         .cta {
             display: flex;
             justify-content: center;
-            padding: 20px;
+            margin-top: 2rem;
         }
-        .cta-button {
+        .cta-btn {
             background-color: #EF233C;
             color: white;
-            padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            padding: 1rem 2rem;
+            border-radius: 10px;
             cursor: pointer;
+        }
+        .cta-btn:hover {
+            background-color: #2B2D42;
         }
         .footer {
             background-color: #2B2D42;
             color: white;
-            padding: 10px;
+            padding: 1rem;
             text-align: center;
+            clear: both;
         }
         .demo-banner {
             background-color: #EF233C;
             color: white;
-            padding: 10px;
+            padding: 1rem;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="demo-banner">
-        <h2>Demo Website</h2>
+        <h2>🔥 Demo Website 🔥</h2>
     </div>
     <nav class="sticky-nav">
-        <h2>Lucky's Concrete Dallas</h2>
-        <ul class="nav-links">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link"><a href="#">Services</a></li>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Contact</a></li>
+        <h2 class="primary">Lucky's Concrete Dallas</h2>
+        <ul>
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">Services</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="hero">
-        <h1>Lucky's Concrete Dallas</h1>
-        <h2>5.0★ Rated Concrete Services in Dallas, TX</h2>
+        <h1 class="primary">Lucky's Concrete Dallas</h1>
+        <h2 class="primary">Your trusted concrete partner in Dallas, TX</h2>
         <div class="stats">
             <div class="stat">
-                <h3>10+ Years</h3>
-                <p>Of Experience</p>
+                <h3>5.0★</h3>
+                <p>Rating</p>
             </div>
             <div class="stat">
-                <h3>1000+ Projects</h3>
-                <p>Completed Successfully</p>
+                <h3>100+</h3>
+                <p>Projects Completed</p>
             </div>
             <div class="stat">
-                <h3>5.0★ Rating</h3>
-                <p>On Google Reviews</p>
+                <h3>10+</h3>
+                <p>Years of Experience</p>
             </div>
         </div>
     </div>
     <div class="services">
         <div class="service">
-            <h3>Concrete Foundation 🏗️</h3>
-            <p>We provide high-quality concrete foundation services for your dream home.</p>
+            <h3>🏗️ Concrete Foundation</h3>
+            <p>We provide strong and durable concrete foundations for your building.</p>
         </div>
         <div class="service">
-            <h3>Concrete Driveways 🚗</h3>
-            <p>Our team can help you with concrete driveway installation and repair.</p>
+            <h3>🚧 Concrete Repair</h3>
+            <p>We offer expert concrete repair services to fix any damage or issue.</p>
         </div>
         <div class="service">
-            <h3>Concrete Patios 🌳</h3>
-            <p>We offer custom concrete patio design and installation services.</p>
+            <h3>🌆 Concrete Flooring</h3>
+            <p>We install high-quality concrete flooring for commercial and residential spaces.</p>
         </div>
         <div class="service">
-            <h3>Concrete Sidewalks 🚶‍♂️</h3>
-            <p>Our team can help you with concrete sidewalk installation and repair.</p>
+            <h3>🚧 Concrete Demolition</h3>
+            <p>We provide safe and efficient concrete demolition services for your project.</p>
         </div>
         <div class="service">
-            <h3>Concrete Retaining Walls 🌆</h3>
-            <p>We provide high-quality concrete retaining wall services for your property.</p>
+            <h3>🏗️ Concrete Construction</h3>
+            <p>We offer comprehensive concrete construction services for your building project.</p>
         </div>
         <div class="service">
-            <h3>Concrete Repair 🛠️</h3>
-            <p>Our team can help you with concrete repair and maintenance services.</p>
+            <h3>🔨 Concrete Finishing</h3>
+            <p>We provide expert concrete finishing services to give your surface a smooth finish.</p>
         </div>
     </div>
     <div class="why-us">
-        <h2>Why Choose Us?</h2>
-        <p>We are a team of experienced professionals dedicated to providing high-quality concrete services in Dallas, TX.</p>
-        <img src="https://source.unsplash.com/600x400/?concrete,work" alt="Concrete Work">
+        <h2 class="primary">Why Choose Us?</h2>
+        <p>We are a trusted and experienced concrete company in Dallas, TX, dedicated to providing high-quality services and exceptional customer satisfaction.</p>
+        <img src="https://picsum.photos/seed/84c25d9bsvc/600/400" alt="Concrete Service">
+        <img src="https://picsum.photos/seed/84c25d9bteam/800/500" alt="Concrete Team">
     </div>
     <div class="reviews">
-        <h2>What Our Clients Say</h2>
         <div class="review">
-            <p>Lucky's Concrete Dallas did an amazing job on my driveway. The team was professional and efficient.</p>
-            <p>Rating: 5.0★</p>
+            <h3>5.0★</h3>
+            <p>Lucky's Concrete Dallas did an excellent job on our concrete foundation. Their team was professional and efficient.</p>
         </div>
         <div class="review">
-            <p>I highly recommend Lucky's Concrete Dallas for any concrete needs. They are reliable and affordable.</p>
-            <p>Rating: 5.0★</p>
+            <h3>5.0★</h3>
+            <p>I was impressed with the quality of work and the customer service provided by Lucky's Concrete Dallas.</p>
         </div>
         <div class="review">
-            <p>Lucky's Concrete Dallas exceeded my expectations with their excellent service and quality work.</p>
-            <p>Rating: 5.0★</p>
+            <h3>5.0★</h3>
+            <p>Lucky's Concrete Dallas is the best concrete company in Dallas, TX. They exceeded my expectations and delivered a high-quality concrete floor.</p>
         </div>
     </div>
     <div class="cta">
-        <button class="cta-button">Get a Free Quote</button>
+        <button class="cta-btn">Get a Free Quote</button>
     </div>
     <div class="footer">
-        <p>&copy; 2024 Lucky's Concrete Dallas</p>
-        <p>Phone: <a href="tel:">Call Us</a></p>
-        <img src="https://source.unsplash.com/800x500/?contractor,team" alt="Contractor Team">
+        <p>&copy; 2024 Lucky's Concrete Dallas. All rights reserved.</p>
+        <p>Phone: <a href="tel:">Call us</a></p>
     </div>
     <div style="position:fixed;bottom:16px;right:16px;z-index:9999;background:white;border-radius:8px;padding:6px 12px;box-shadow:0 2px 12px rgba(0,0,0,.15);font-family:sans-serif;font-size:11px;color:#1a2744;border:1px solid #ddd;">Demo by <strong style="color:#0a6ebd">Zamara Solutions</strong></div>
 </body>
