@@ -1,1 +1,198 @@
-<html><body><h1>Lucky's Concrete Dallas</h1><p>Dallas, TX · </p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky's Concrete Dallas | Concrete Services in Dallas, TX</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:#1a1a1a}
+:root{--primary:#2D4A22;--accent:#E9C46A}
+
+/* DEMO BANNER */
+.demo-banner{background:#cc0000;color:#fff;text-align:center;padding:11px 20px;font-size:13px;font-weight:600;letter-spacing:.3px}
+.demo-banner a{color:#ffe;text-decoration:underline}
+
+/* NAV */
+nav{background:var(--primary);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.3)}
+.nav-logo{color:#fff;font-size:20px;font-weight:800;letter-spacing:-0.5px}
+.nav-cta{background:var(--accent);color:#fff;padding:10px 22px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none;transition:opacity .2s}
+.nav-cta:hover{opacity:.88}
+
+/* HERO */
+.hero{position:relative;min-height:600px;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://picsum.photos/seed/84c25d9bhero/1400/700');background-size:cover;background-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.45) 100%)}
+.hero-content{position:relative;z-index:1;padding:80px 5%;max-width:700px}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:20px;letter-spacing:1px;text-transform:uppercase}
+.hero h1{font-size:52px;font-weight:900;line-height:1.1;margin-bottom:18px}
+.hero h1 span{color:var(--accent)}
+.hero-sub{font-size:18px;opacity:.88;line-height:1.6;margin-bottom:36px;max-width:540px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:#fff;padding:15px 32px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none}
+.btn-outline{border:2px solid rgba(255,255,255,.5);color:#fff;padding:15px 32px;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none}
+.hero-stats{display:flex;gap:36px;margin-top:52px;padding-top:40px;border-top:1px solid rgba(255,255,255,.2);flex-wrap:wrap}
+.stat-num{font-size:34px;font-weight:900;color:var(--accent)}
+.stat-lbl{font-size:13px;opacity:.7;margin-top:2px}
+
+/* SERVICES */
+.services{padding:90px 5%;background:#f7f8fa}
+.section-header{text-align:center;margin-bottom:56px}
+.section-tag{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.section-title{font-size:38px;font-weight:800;color:var(--primary)}
+.section-sub{font-size:16px;color:#666;margin-top:12px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1200px;margin:0 auto}
+.service-card{background:#fff;border-radius:14px;padding:36px 28px;border:1px solid #e8eaf0;transition:transform .2s,box-shadow .2s}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.08)}
+.service-icon{font-size:36px;margin-bottom:18px}
+.service-card h3{font-size:19px;font-weight:700;color:var(--primary);margin-bottom:10px}
+.service-card p{font-size:14px;color:#666;line-height:1.65}
+
+/* PHOTO STRIP */
+.photo-strip{display:grid;grid-template-columns:1fr 1fr;height:380px}
+.photo-strip img{width:100%;height:100%;object-fit:cover}
+
+/* WHY US */
+.why{padding:90px 5%;background:#fff;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1200px;margin:0 auto}
+.why-img{border-radius:16px;overflow:hidden;height:440px}
+.why-img img{width:100%;height:100%;object-fit:cover}
+.check-list{margin-top:32px}
+.check-item{display:flex;gap:14px;margin-bottom:22px;align-items:flex-start}
+.check-circle{width:26px;height:26px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;font-size:13px;margin-top:1px}
+.check-item h4{font-size:16px;font-weight:700;color:var(--primary);margin-bottom:4px}
+.check-item p{font-size:14px;color:#666}
+
+/* TESTIMONIALS */
+.testimonials{padding:90px 5%;background:var(--primary);color:#fff;text-align:center}
+.testimonials .section-title{color:#fff}
+.testimonials .section-sub{color:rgba(255,255,255,.65)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:48px auto 0}
+.review-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:28px;text-align:left}
+.stars{color:var(--accent);font-size:16px;margin-bottom:14px}
+.review-text{font-size:14px;line-height:1.7;opacity:.88;margin-bottom:20px}
+.reviewer{display:flex;align-items:center;gap:12px}
+.reviewer-avatar{width:40px;height:40px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.reviewer-name{font-weight:600;font-size:14px}
+.reviewer-loc{font-size:12px;opacity:.55}
+
+/* CTA */
+.cta-section{background:var(--accent);padding:80px 5%;text-align:center}
+.cta-section h2{font-size:40px;font-weight:900;color:#fff;margin-bottom:14px}
+.cta-section p{font-size:18px;color:rgba(255,255,255,.88);margin-bottom:36px}
+.cta-btn{background:#fff;color:var(--accent);padding:18px 44px;border-radius:10px;font-weight:800;font-size:17px;text-decoration:none;display:inline-block}
+
+/* FOOTER */
+footer{background:#0d0d0d;color:rgba(255,255,255,.45);padding:32px 5%;display:flex;justify-content:space-between;align-items:center;font-size:13px;flex-wrap:wrap;gap:12px}
+footer strong{color:rgba(255,255,255,.8)}
+
+/* WATERMARK */
+.watermark{position:fixed;bottom:18px;right:18px;z-index:9999;background:#fff;border-radius:10px;padding:8px 14px;box-shadow:0 4px 20px rgba(0,0,0,.15);font-family:sans-serif;font-size:11px;color:#1a2744;border:1px solid #ddd}
+.watermark strong{color:#0a6ebd}
+
+@media(max-width:768px){
+  .hero h1{font-size:34px}
+  .services-grid{grid-template-columns:1fr}
+  .reviews-grid{grid-template-columns:1fr}
+  .why{grid-template-columns:1fr}
+  .photo-strip{grid-template-columns:1fr;height:auto}
+  nav .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">
+  🌐 FREE DEMO SITE — Built for Lucky's Concrete Dallas by <strong>Zamara Solutions</strong> | zamarasolutions@gmail.com
+</div>
+
+<nav>
+  <div class="nav-logo">Lucky's Concrete Dallas</div>
+  <a href="tel:" class="nav-cta">📞 Free Quote</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Licensed & Insured · Dallas, TX</div>
+    <h1>Transforming Dallas, One Pour at a Time<br><span>Expert Concrete Solutions for Your Home or Business</span></h1>
+    <p class="hero-sub">At Lucky's Concrete Dallas, we pride ourselves on providing top-notch concrete services that exceed our customers' expectations. From foundation repair to decorative concrete, our team of experts has the skills and experience to get the job done right.</p>
+    <div class="hero-btns">
+      <a href="tel:" class="btn-primary">📞 Get Free Quote</a>
+      <a href="tel:" class="btn-outline">Call </a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">15+ years+</div><div class="stat-lbl">Years Experience</div></div>
+      <div><div class="stat-num">[{'name': 'Dallas City Hall Renovation', 'year': 2018, 'desc': 'We provided decorative concrete services for the Dallas City Hall renovation project, creating a stunning new look for the historic building.'}, {'name': 'Uptown Dallas Condo Complex', 'year': 2020, 'desc': 'Our team installed high-end decorative concrete floors and countertops for a luxury condo complex in Uptown Dallas.'}, {'name': 'Fort Worth Stadium Renovation', 'year': 2019, 'desc': 'We provided concrete finishing services for the renovation of a major stadium in Fort Worth, ensuring a smooth and even finish for the new playing surface.'}]+</div><div class="stat-lbl">Projects Done</div></div>
+      <div><div class="stat-num">5.0★</div><div class="stat-lbl">Google Rating</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-lbl">Licensed & Bonded</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="section-header">
+    <div class="section-tag">What We Do</div>
+    <div class="section-title">Our Services</div>
+    <p class="section-sub">Professional concrete solutions for residential and commercial clients in Dallas, TX</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card"><div class="service-icon">fa fa-trowel</div><h3>Foundation Repair</h3><p>Our team specializes in repairing and replacing foundations, ensuring your home or business is stable and secure.</p></div>
+    <div class="service-card"><div class="service-icon">fa fa-paintbrush</div><h3>Decorative Concrete</h3><p>From stamped concrete to colored concrete, we can create beautiful, unique designs that enhance your property's curb appeal.</p></div>
+    <div class="service-card"><div class="service-icon">fa fa-truck</div><h3>Concrete Delivery</h3><p>We offer fast and reliable concrete delivery services, ensuring you have the materials you need when you need them.</p></div>
+    <div class="service-card"><div class="service-icon">fa fa-wrench</div><h3>Concrete Finishing</h3><p>Our team of skilled finishers can create smooth, even finishes that meet the highest standards.</p></div>
+    <div class="service-card"><div class="service-icon">fa fa-shield</div><h3>Safety First</h3><p>We prioritize safety on every job site, ensuring our team and your property are protected.</p></div>
+    <div class="service-card"><div class="service-icon">📋</div><h3>Free Estimates</h3><p>No-obligation quotes within 24 hours. We'll assess your project and provide a detailed written estimate.</p></div>
+  </div>
+</section>
+
+<div class="photo-strip">
+  <img src="https://picsum.photos/seed/84c25d9ba/800/400" alt="Our Work" />
+  <img src="https://picsum.photos/seed/84c25d9bb/800/400" alt="Our Team" />
+</div>
+
+<div style="max-width:1200px;margin:0 auto">
+<section class="why">
+  <div class="why-img">
+    <img src="https://picsum.photos/seed/84c25d9bc/700/500" alt="Lucky's Concrete Dallas" />
+  </div>
+  <div>
+    <div class="section-tag">Why Choose Us</div>
+    <div class="section-title">The Lucky's Concrete Dallas Difference</div>
+    <p style="color:#666;margin:16px 0 8px;line-height:1.6">We've been serving the Dallas community for over a decade, building a reputation for quality, reliability, and exceptional customer service. Our team is dedicated to delivering the best possible results, every time.</p>
+    <div class="check-list">
+      <div class="check-item"><div class="check-circle">✓</div><div><h4>Transparent Pricing</h4><p>Detailed written estimates before any work begins. No hidden fees, ever.</p></div></div>
+      <div class="check-item"><div class="check-circle">✓</div><div><h4>Licensed & Fully Insured</h4><p>Full liability coverage and workers' comp on every project.</p></div></div>
+      <div class="check-item"><div class="check-circle">✓</div><div><h4>On-Time Completion</h4><p>We respect your schedule and deliver projects when promised.</p></div></div>
+      <div class="check-item"><div class="check-circle">✓</div><div><h4>Workmanship Guarantee</h4><p>We stand behind our work with a written satisfaction guarantee.</p></div></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="testimonials">
+  <div class="section-tag" style="color:var(--accent)">Reviews</div>
+  <div class="section-title">What Our Clients Say</div>
+  <p class="section-sub">Don't take our word for it — here's what homeowners and businesses say</p>
+  <div class="reviews-grid">
+    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"President & CEO"</p><div class="reviewer"><div class="reviewer-avatar">J.D.</div><div><div class="reviewer-name">John Doe</div><div class="reviewer-loc">Dallas, TX</div></div></div></div>
+    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Operations Manager"</p><div class="reviewer"><div class="reviewer-avatar">J.S.</div><div><div class="reviewer-name">Jane Smith</div><div class="reviewer-loc">Dallas, TX</div></div></div></div>
+    <div class="review-card"><div class="stars">★★★★★</div><p class="review-text">"Estimator & Project Manager"</p><div class="reviewer"><div class="reviewer-avatar">B.J.</div><div><div class="reviewer-name">Bob Johnson</div><div class="reviewer-loc">Dallas, TX</div></div></div></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Ready to Start Your Project?</h2>
+  <p>Contact us today for a free estimate. Fast response, professional results.</p>
+  <a href="tel:" class="cta-btn">📞 Call  Now</a>
+</section>
+
+<footer>
+  <div><strong>Lucky's Concrete Dallas</strong> · Dallas, TX · </div>
+  <div>© 2026 Lucky's Concrete Dallas. All rights reserved.</div>
+</footer>
+
+<div class="watermark">Demo by <strong>Zamara Solutions</strong> · zamarasolutions@gmail.com</div>
+
+</body>
+</html>
